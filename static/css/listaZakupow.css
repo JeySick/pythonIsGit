@@ -1,0 +1,91 @@
+h1 {
+    color: red;
+    font-weight: bold;
+}
+
+
+h1 a {
+    color: green;
+}
+
+body {
+    padding-left: 30px;
+}
+
+.page-header {
+    background-color: green;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+
+.date {
+    float: right;
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.lista-form textarea, .lista-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+  color: blue;
+font-size: 26pt;
+position: fixed;
+top: 0px;
+right: 20px;
+margin-top: 30px;
+}
+
+.lista {
+    border: 3px;
+    border-color: green;
+    border-style: dotted;;
+    margin-bottom: 70px;
+}
+
+.lista h1 a, .post h1 a:visited {
+    color: #000000;
+}
+
+a {
+  color: black;
+}
+.button {
+    text-decoration: none;
+    background-color: #4CAF50; /* Green */
+     border: none;
+     color: white;
+     padding: 16px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     -webkit-transition-duration: 0.4s; /* Safari */
+     transition-duration: 0.4s;
+     cursor: pointer;
+     background-color: white;
+     color: black;
+     border: 2px solid #4CAF50;
+}
+
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}

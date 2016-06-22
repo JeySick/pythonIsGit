@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Jess i jej strona</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/listaZakupow.css' %}">
+    </head>
+
+    <body>
+        <div class="page-header">
+          <h1><a href="/">Wszystkie stworzone listy</a></h1>
+        </div>
+
+        {% for lista in listas %}
+            <div class="lista">
+
+
+                <h1><a href="{% url 'edit_lista' pk=lista.pk %}">{{ lista.nazwa }}</a></h1>
+                <p>{{ lista.lista |linebreaks }}</p>
+                <p>Do Kiedy: {{ lista.do_kiedy }}</p>
+                <h1>
+
+            </div>
+        {% endfor %}
+        <a href="{% url 'post_new' %}" class="top-menu">Dodaj Nowa Liste</a>
+
+
+    </body>
+</html>

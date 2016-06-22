@@ -17,3 +17,12 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class Lista(models.Model):
+    autor = models.ForeignKey('auth.User')
+    nazwa = models.CharField(max_length=200)
+    lista = models.TextField()
+    do_kiedy = models.DateTimeField(blank=True, null=True)
+
+    def __str__(self):
+        return self.nazwa

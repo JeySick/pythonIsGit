@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Jess i jej strona</title>
+        <link rel="stylesheet" href="{% static 'css/listaZakupow.css' %}">
+    </head>
+
+    <body>
+          <h1>Nowa lista</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="button">Zapisz</button>
+    </form>
+
+  </body>
+</html>
